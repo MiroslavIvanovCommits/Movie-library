@@ -17,11 +17,14 @@ function App() {
 
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/search" element={<Search />} />
+                    <Route path="/details/:movieId" element={<Details />} />
+                    <Route path='*' element={<Home />} />
                 </Routes>
 
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
