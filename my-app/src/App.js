@@ -11,7 +11,7 @@ import Search from './components/Search.js';
 function App() {
     return (
         <div className="App">
-            {/* <Header /> */}
+            <Header />
 
             <main className="wrapper">
 
