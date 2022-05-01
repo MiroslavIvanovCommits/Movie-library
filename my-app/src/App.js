@@ -5,6 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Home from "./components/Home.js";
+import Details from './components/Details.js';
+import Search from './components/Search.js';
 
 function App() {
     return (
