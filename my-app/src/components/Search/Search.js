@@ -1,3 +1,5 @@
+import "./Search.css";
+
 const Search = () => {
     return (
         <h1>Hello World</h1>
