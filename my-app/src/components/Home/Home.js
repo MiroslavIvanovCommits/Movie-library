@@ -2,7 +2,14 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <h1>Hello World</h1>
+        <section className="hero">
+            <div className="hero-content">
+                <h1 className="hero-title">Discover your favourite movies</h1>
+                <button type="button" className="hero-button" onclick="location.href='tours.html'">
+                    Search &raquo;
+                </button>
+            </div>
+        </section>
     );
 }
 
