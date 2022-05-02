@@ -2,7 +2,12 @@ import "./Search.css";
 
 const Search = () => {
     return (
-        <h1>Hello World</h1>
+        <div className="search-box">
+            <form action="/form/submit" method="GET">
+                <input type="text" name="text" className="search" placeholder="Search here!" />
+                <input type="submit" name="submit" className="submit" value="Search" />
+            </form>
+        </div>
     );
 }
 

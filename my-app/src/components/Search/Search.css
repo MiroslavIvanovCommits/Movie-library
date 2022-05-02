@@ -1,0 +1,26 @@
+  .search-box {
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Lato' !important;
+  }
+
+  .search {
+      padding: 12px 18px;
+      margin-right: 8px;
+  }
+
+  .submit {
+    background-color: #4CAF50;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
