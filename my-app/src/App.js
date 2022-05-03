@@ -2,7 +2,7 @@ import './App.css';
 
 import { Routes, Route } from "react-router-dom";
 import { AuthContext } from "./contexts/AuthContext.js";
-import { useState } from "react";
+import useLocalStorage from "./hooks/useLocalStorage.js";
 
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
@@ -20,11 +20,7 @@ const initialAuthState = {
 };
 
 function App() {
-    const [user, setUser] = useState({
-        _id: "",
-        email: "",
-        accessToken: ""
-    });
+    const [user, setUser] = useLocalStorage("user", initialAuthState);
 
     const login = (authData) => {
         setUser(authData);
