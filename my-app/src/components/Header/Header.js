@@ -6,8 +6,11 @@ const Header = () => {
         <header>
             <div className="topnav">
                 <nav className="navigation">
-                    <Link to="/">My Movie Collection</Link>
-                    <Link to="/search">Search</Link>
+                        <Link to="/">My Movie Collection</Link>
+                        <Link to="/search">Search</Link>
+                        <Link to="/login" className="button">Login</Link>
+                        <Link to="/register" className="button">Register</Link>
+                        <Link to="/logout" className="button">Logout</Link>
                     <div className="search-container">
                         <form action="/action_page.php">
                             <input type="text" placeholder="Search by movie title..." name="search" />
