@@ -2,8 +2,11 @@ import "./Login.css";
 
 import { useNavigate } from "react-router-dom";
 import * as authService from "../../services/authService.js";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext.js";
 
 const Login = () => {
+    const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onLoginHandler = (e) => {
@@ -13,12 +16,18 @@ const Login = () => {
         let email = formData.get("email");
         let password = formData.get("password");
 
-        authService.login(email);
+        authService.login(email, password)
+            .then((authData) => {
+                login(authData);
 
-        navigate("/");
+                navigate("/");
+            })
+            .catch(err => {
+                console.log(err);
+            });
     };
 
-    return(
+    return (
         <section id="login-page" className="login">
             <form id="login-form" onSubmit={onLoginHandler} method="POST">
                 <fieldset>
