@@ -1,13 +1,12 @@
 import "./Register.css";
 
 import * as authService from "../../services/authService.js";
-import { AuthContext } from "../../contexts/AuthContext.js";
-import { useContext } from "react";
+import { useAuthContext } from "../../contexts/AuthContext.js";
 import { useNavigate } from "react-router";
 
 const Register = () => {
     const navigate = useNavigate();
-    const { login } = useContext(AuthContext);
+    const { login } = useAuthContext();
 
     const registerSubmintHandler = (e) => {
         e.preventDefault();

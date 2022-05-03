@@ -1,11 +1,10 @@
 import "./Header.css";
 
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext.js";
+import { useAuthContext } from "../../contexts/AuthContext.js";
 
 const Header = () => {
-    const { user } = useContext(AuthContext);
+    const { user } = useAuthContext();
 
     let guestNavigation = (
         <>
