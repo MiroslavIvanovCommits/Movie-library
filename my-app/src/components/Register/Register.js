@@ -22,7 +22,7 @@ const Register = () => {
         <section id="register-page" className="register">
             <form id="register-form" action="" method="POST" onSubmit={registerSubmintHandler}>
                 <fieldset>
-                    <legend>Register Form</legend>
+                    <legend>Sign Up</legend>
                     <p className="field">
                         <label htmlFor="email">Email</label>
                         <span className="input">
